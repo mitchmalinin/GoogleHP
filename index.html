@@ -26,14 +26,13 @@
    </section>
    <section class = "form">
         <form>
-                <label for="form-search"></label>
                 <input type="text" id="form-search" placeholder="Search Google or type URL">
         </form>
    </section>
    <section>
        <div class="btn2">
            <button class="btn">Google Search</button>
-           <button class="btn">I'm Feeling Lucky</button>
+           <button class="btn"id="btn">I'm Feeling Lucky</button>
        </div>
    </section>
    <footer>
@@ -48,5 +47,14 @@
           <li><a href="#">Settings</a></li>
         </ul>       
     </footer> 
+
+    <script>
+        var button = document.getElementById('btn');
+        
+        button.addEventListener('click', function(e){
+           alert("Good for you, go play the lottery or something");
+
+        });
+    </script>
 </body>
 </html>
